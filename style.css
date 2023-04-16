@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, #4f6849, #546c4b, #59714d, #5e754e, #647950);
+}
+
+.container
+{
+    background-color: white;
+    padding: 2rem;
+    border-radius: 2rem;
+}
+
+.board{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+
+}
+
+.tile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 8rem;
+    min-height: 8rem;
+    border: 2px solid;
+    font-size: 4rem;
+    cursor: pointer;
+}
+
+.remove-left-border{
+    border-left: none;
+}
+
+.remove-right-border{
+    border-right: none;
+}
+
+.remove-bottom-border{
+    border-bottom: none;
+}
+
+.remove-top-border{
+    border-top: none;
+}
+
+.message-text-element{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+}
+.result{
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+main:not(.container){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    -webkit-box-shadow: 0px 15px 42px -17px rgba(0, 0, 0, 1);
+-moz-box-shadow: 0px 15px 42px -17px rgba(0, 0, 0, 1);
+box-shadow: 0px 15px 42px -17px rgba(0, 0, 0, 1);
+    font-size: 1rem;
+    cursor: pointer;
+}
